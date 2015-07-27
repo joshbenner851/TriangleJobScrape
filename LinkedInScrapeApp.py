@@ -11,21 +11,25 @@ for x in urls:
     req = urllib.request.Request(x, None, headers)
     html = urllib.request.urlopen(req)
     soup = BeautifulSoup(html)
+    #print(soup.prettify)
     name = soup.findAll('span',{"class":"full-name"})[0].text
     title = soup.findAll('p',{"class":"title"})[0].text
     location = soup.findAll('span',{"class":"locality"})[0].text
     print(name)
     print(title)
     print(location)
-    exp_lst = soup.findAll('header')
+    places = soup.findAll("span",{"class":"locality"})
+    for x in places:
+        print(x.text)
+    exp_lst = str(soup.findAll('header'))
+    company = BeautifulSoup(exp_lst)
+    section = company.findAll("h5")
     jobNums = BeautifulSoup(str(exp_lst))
-    jobNums.findAll('h4',{'class':'field-text'})
-    print(jobNums)
-    '''for x in range(jobNums):
-        if("Michigan State UniversityBachelor" in exp_lst[x].text or "(M.S.)" in exp_lst[x].text):
-            break
-        print(exp_lst[x].text)
-    '''
+    for item in section:
+        for x in item.contents:
+            #if("Michigan State UniversityBachelor" in x.text or "(M.S.)" in x.text or "B.S" in x.text):
+            if x.text != "":
+                print(x.text)
     print()
     print()
     print()

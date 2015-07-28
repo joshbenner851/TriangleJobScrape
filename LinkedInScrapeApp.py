@@ -4,7 +4,7 @@ import json
 from time import sleep
 from bs4 import BeautifulSoup
 import urllib, urllib3
-
+from googlemaps import Client
 
 
 def writeInfo(users):
@@ -30,14 +30,17 @@ def printInfo(users):
         print()
         print()
         print()
-    
-def grabInfo(urls):
+
+def grabUrl(url):
+    req = urllib.request.Request(url, None,headers={'User-Agent' : 'Mozilla/5.0'})
+    html = urllib.request.urlopen(req)
+    return html
+
+def parseInfo(urls):
     users = []
     for x in urls:
         user = []
-        req = urllib.request.Request(x, None, headers)
-        html = urllib.request.urlopen(req)
-        soup = BeautifulSoup(html)
+        soup = BeautifulSoup(grabUrl(x))
         user.append(soup.findAll('span',{"class":"full-name"})[0].text)
         #user.append(soup.findAll('p',{"class":"title"})[0].text)
         user.append(soup.findAll('span',{"class":"locality"})[0].text)
@@ -58,13 +61,24 @@ def grabInfo(urls):
                 i += 1
         user.append(experience)
         users.append(user)
-    writeInfo(users)
+    return users
 
-headers = { 'User-Agent' : 'Mozilla/5.0' }
+def saveImage(img):
+    f=open("stuff"+".jpg","wb")
+    f.write(img.read())
+    f.close()
+
+
 urls = ["https://www.linkedin.com/in/travisjpacker","https://www.linkedin.com/pub/nicholas-mirallegro/89/845/128","https://www.linkedin.com/in/joshbenner851"]
+geocode = "https://maps.googleapis.com/maps/api/staticmap?size=1000x1000&maptype=roadmap\&markers=size:mid%7Ccolor:red%7COkemos,MI%7CGrand+Rapids,MI%7CLansing,MI%7CRiverton,Wyoming"
 #urls = ["https://www.linkedin.com/in/joshbenner851"]
 #urls = ["https://www.linkedin.com/pub/william-dion/43/774/753"]
-grabInfo(urls)
+#grabInfo(urls)
+#urls = ["http://maps.googleapis.com/maps/api/geocode/key=AIzaSyCeOyCAX5JJpBkJZEoFobvVuvfY5N1s2us&output=json?parameters=520+3rd+Street+San+Francisco+CA"]
+users = parseInfo(urls)
+printInfo(users)
+img = grabUrl(geocode)
+saveImage(img)
 
 
 

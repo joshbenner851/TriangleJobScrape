@@ -1,30 +1,62 @@
 Name: William Dion
 Current Location: East Lansing, Michigan
 Company: Biomass Conversion Research Laboratory Location: East Lansing, Michigan
+Company: Results Tutoring Location: Biomass Conversion Research Laboratory
 
 Name: Travis Packer
 Current Location: Greenville, South Carolina
 Company: GE Power & Water Location: Greenville, South Carolina
+Company: Michigan State University Location: Greenville, South Carolina
+Company: GE Power & Water Location: East Lansing, MI
+Company: Michigan State University Location: Greenville, South Carolina Area
+Company: GE Power & Water Location: CVRC
+Company: Michigan State University Location: Greenville, South Carolina Area
+Company: Caterpillar Inc. Location: East Lansing, Michigan
+Company: GE Appliances Location: Peoria, Illinois Area
+Company: Michigan State University, Department of Communicative Sciences Location: Louisville, Kentucky Area
+Company: MAHLE Behr USA Location: Lansing, Michigan Area
+Company: Tommy Hilfiger Location: Troy, Michigan
 
 Name: Nicholas Mirallegro
 Current Location: Novi, Michigan
 Company: Magna Closures & Magna Mirrors Location: Novi, Michigan
+Company: Michigan State University IT Department Location: Novi, MI
+Company: Magna Closures & Magna Mirrors Location: East Lansing, MI
+Company: Obadiah's Seafood Location: Novi
 
 Name: Josh Benner
 Current Location: Grand Rapids, Michigan
 Company: Michigan State University Location: Grand Rapids, Michigan
+Company: TechSmith Corporation Location: East Lansing, MI
+Company: Josh's Lawn Mowing Location: Okemos, MI
+Company: Panera Bread Location: Grand Rapids
+Company: Family Fare Location: Grand Rapids
 
 Name: Samuel-Hunter Berndt
 Current Location: Greater Grand Rapids, Michigan Area
 Company: Crowe Horwath LLP Location: Greater Grand Rapids, Michigan Area
+Company: Michigan State University Computer Center Location: Chicago, Illinois
+Company: Michigan State University College of Engineering Location: East Lansing, Michigan
+Company: MySpartanSublease Location: East Lansing, Michigan
+Company: Hipaway Location: East Lansing, Michigan
+Company: Michigan State University International Center Location: Berlin Area, Germany
+Company: Virus Free Location: International Center
+Company: Computer Science Location: Belding
 
 Name: Jovanni Ivanaj
 Current Location: Lake Orion, Michigan
 Company: Yazaki North America Location: Lake Orion, Michigan
+Company: Florida Power & Light Company (NextEra Energy) Location: Canton, MI
 
 Name: Dimitrius G. Innis
 Current Location: East Lansing, Michigan
 Company: Nestle USA Location: East Lansing, Michigan
+Company: Anaerobic Digestion Research and Education Center Location: East Lansing
+Company: Unilever Location: Raeford, North Carolina
+Company: Klotz Auto Parts Location: Shelby, MI
+Company: Michigan State University Location: East Lansing
+Company: Plant, Soil, and Microbial Science Department at Michigan State University Location: East Lansing
+Company: Costa Rica Location: Shelby, MI
 
 Name: Grant Kunzi
 Current Location: Hudsonville, Michigan
@@ -33,28 +65,45 @@ Company: Associated Students of Michigan State University Location: Hudsonville,
 Name: Daniel Lahnala
 Current Location: Saline, Michigan
 Company: Halla Visteon Climate Control Location: Saline, Michigan
+Company: Michigan State University Location: East Lansing, MI
 
 Name: Jonathon Nichols
 Current Location: Lansing, Michigan
 Company: OHM Advisors Location: Lansing, Michigan
+Company: Marathon Petroleum Corporation Location: Livonia, MI
+Company: Mead & Hunt Location: Findlay, Ohio
+Company: Michigan State University Location: Lansing
+Company: Michigan Department of Transportation Location: East Lansing, MI
+Company: Michigan Department of Transportation Location: Grand Rapids, MI
 
 Name: Jalaj Prakash
 Current Location: East Lansing, Michigan
 Company: Neumayer Tekfor Automotive Ltda Location: East Lansing, Michigan
+Company: MSU Engineering and Architectural Services Location: East Lansing, Michigan
 
 Name: Jake Patin
 Current Location: East Lansing, Michigan
 Company: State of Michigan - Department of Environmental Quality Location: East Lansing, Michigan
+Company: Michigan State University Location: Lansing, Michigan Area
+Company: Michigan State University - Department of Community Sustainability Location: Lansing, Michigan Area
+Company: State of Michigan - Department of Environmental Quality Location: East Lansing
+Company: PM Environmental, Inc. Location: Lansing, Michigan Area
+Company: Lacks Enterprises Location: Lansing, Michigan Area
+Company: Grand Rapids Community College Location: Greater Grand Rapids, Michigan Area
 
 Name: Yamil Pietri
 Current Location: East Lansing, Michigan
 Company: UPS Location: East Lansing, Michigan
+Company: MSU Packaging Location: Addison, IL
 
 Name: Kyle Ratliff
 Current Location: East Lansing, Michigan
 Company: North Valley Internal Medicine Location: East Lansing, Michigan
+Company: Personal Health Care Location: 1501 North Milford Rd. Suite 200 Milford, MI 48381
 
 Name: Jack (John) Hiltz
 Current Location: Livonia, Michigan
 Company: Gap Inc./ Banana Republic Location: Livonia, Michigan
+Company: Michigan State University Residential Hospitality Services Location: East Lansing, MI
+Company: Nestlé Location: Solon, OH
 

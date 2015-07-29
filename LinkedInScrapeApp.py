@@ -19,7 +19,24 @@ def writeInfo(users):
         print(file=file_obj)
     file_obj.close()
     print("file has been written to")
-
+    
+def formatString(location):
+    '''only gets current locations'''
+    master_loc = ""
+    for user in users:
+        for locations in user[2]:
+            for v in locations.values():
+                location = v.split(",")
+                location = location[0].split(" ")
+                name =""
+                for x in location:
+                    name += x + "+"
+                name = name[:-1]
+                master_loc += name + "%7C"
+                #print(location)
+        
+    return master_loc
+    
 def printInfo(users):
     for user in users:
         print("Name: " + user[0])
@@ -52,32 +69,44 @@ def parseInfo(urls):
         jobNums = BeautifulSoup(str(exp_lst))
         experience = []
         i = 0
-        for item in section:
-            info = item.contents
-            if str(info[0])[13:19] == "degree":
-                break
-            if info[0].text != "" :
-                experience.append({str(info[0].text):places[i].text})
-                i += 1
+        try:
+            for item in section:
+                info = item.contents
+                if str(info[0])[13:19] == "degree":
+                    break
+                if info[0].text != "" :
+                    experience.append({str(info[0].text):places[i].text})
+                    i += 1
+        except :
+            print("skipping")
+        
         user.append(experience)
         users.append(user)
     return users
 
 def saveImage(img):
-    f=open("stuff"+".jpg","wb")
+    f=open("CurrentTrianglesLive"+".jpg","wb")
     f.write(img.read())
     f.close()
 
 
-urls = ["https://www.linkedin.com/in/travisjpacker","https://www.linkedin.com/pub/nicholas-mirallegro/89/845/128","https://www.linkedin.com/in/joshbenner851"]
-geocode = "https://maps.googleapis.com/maps/api/staticmap?size=1000x1000&maptype=roadmap\&markers=size:mid%7Ccolor:red%7COkemos,MI%7CGrand+Rapids,MI%7CLansing,MI%7CRiverton,Wyoming"
+#urls = ["https://www.linkedin.com/in/travisjpacker","https://www.linkedin.com/pub/nicholas-mirallegro/89/845/128","https://www.linkedin.com/in/joshbenner851"]
+geocode = "https://maps.googleapis.com/maps/api/staticmap?size=1000x1000&maptype=roadmap\&markers=size:mid%7Ccolor:red%7COkemos,MI%7CGrand+Rapids"
 #urls = ["https://www.linkedin.com/in/joshbenner851"]
 #urls = ["https://www.linkedin.com/pub/william-dion/43/774/753"]
 #grabInfo(urls)
 #urls = ["http://maps.googleapis.com/maps/api/geocode/key=AIzaSyCeOyCAX5JJpBkJZEoFobvVuvfY5N1s2us&output=json?parameters=520+3rd+Street+San+Francisco+CA"]
+file_obj = open("LinkedInUrls.txt",'r')
+urls = []
+for line in file_obj:
+    urls.append(line)
+#geocode += formatString(location)
 users = parseInfo(urls)
 printInfo(users)
-img = grabUrl(geocode)
+writeInfo(users)
+location = formatString(users)
+print(location)
+img = grabUrl(geocode + location)
 saveImage(img)
 
 

@@ -5,26 +5,75 @@ from time import sleep
 from bs4 import BeautifulSoup
 import urllib, urllib3
 from googlemaps import Client
+from flask import Flask
+from flask import render_template
+import json
+import time
 
+app = Flask(__name__)
+
+@app.route('/')
+def center():
+    lat = 50
+    lng = -84
+    dict = ["Grand Rapids"]
+    info = 'This was created by an extremely ambitious brother who is looking for a better job.'
+    return render_template('add.html',lat=lat,lng=lng, info=json.dumps(info),dict=json.dumps(dict))
 
 def writeInfo(users):
+    info = ""
     file = "triangleinfo.txt"
     file_obj = open(file,'w')
     for user in users:
-        print("Name: " + user[0],file=file_obj)
-        print("Current Location: " + user[1],file=file_obj)
-        for experiences in user[2]:
+        name = user[0]
+        location = user[1]
+        name.encode('ascii','ignore')
+        location.encode('ascii','ignore')
+        file_obj.write("Name: " + name+"\n")
+        file_obj.write("Current Location: " + location+"\n")
+        for experiences in user[3]:
             for k,v in experiences.items():
-                print("Company: " + k + " Location: " + v,file=file_obj)
-        print(file=file_obj)
+                k = k.encode('ascii', 'ignore').decode('ascii')
+                v = v.encode('ascii', 'ignore').decode('ascii')
+                file_obj.write("Company: " + k + " Location: " + v +"\n" +"\n")
+        #print(file=file_obj)
     file_obj.close()
     print("file has been written to")
+
+def writeCompany(users):
+    file = "triangleCompany"
+    file_obj = open(file,'w')
+    for user in users:
+        name = user[0]
+        name.encode('ascii','ignore')
+        file_obj.write("<br/>" + "Name: " + name+"\n" + "<br />")
+        for experiences in user[3]:
+            for k,v in experiences.items():
+                k = k.encode('ascii', 'ignore').decode('ascii')
+                file_obj.write("Company: " + k + "\n" +"\n" + "<br/>")
+        #print(file=file_obj)
+    file_obj.close()
+    print("Companies have been written to")
     
+
+def writeCurrentLocation(users):
+    info = ""
+    file = "triangleCurrentLocation.txt"
+    file_obj = open(file,'w')
+    for user in users:
+        location = user[1]
+        location.encode('ascii','ignore')
+        file_obj.write("Current Location: " + location+"\n")
+            #k = k.encode('ascii', 'ignore').decode('ascii')
+    #print(file=file_obj)
+    file_obj.close()
+    print("company info written to")
+
 def formatString(location):
     '''only gets current locations'''
     master_loc = ""
     for user in users:
-        for locations in user[2]:
+        for locations in user[3]:
             for v in locations.values():
                 location = v.split(",")
                 location = location[0].split(" ")
@@ -33,15 +82,14 @@ def formatString(location):
                     name += x + "+"
                 name = name[:-1]
                 master_loc += name + "%7C"
-                #print(location)
-        
     return master_loc
     
 def printInfo(users):
     for user in users:
         print("Name: " + user[0])
         print("Current Location: " + user[1])
-        for experiences in user[2]:
+        for experiences in user[3]:
+            print(experiences)
             for k,v in experiences.items():
                 print("Company: " + k + " Location: " + v)
         print()
@@ -56,10 +104,15 @@ def grabUrl(url):
 def parseInfo(urls):
     users = []
     for x in urls:
+        time.sleep(10) # delays for 5 seconds
         user = []
-        soup = BeautifulSoup(grabUrl(x))
+        soup = BeautifulSoup(grabUrl(x),"html.parser")
+        span = soup.findAll('span')
+        if soup == "" or soup.findAll('span')  == []:
+            continue
+        #print(soup.findAll('span'))
         user.append(soup.findAll('span',{"class":"full-name"})[0].text)
-        #user.append(soup.findAll('p',{"class":"title"})[0].text)
+        user.append(soup.findAll('p',{"class":"title"})[0].text)
         user.append(soup.findAll('span',{"class":"locality"})[0].text)
         places = soup.findAll("span",{"class":"locality"})
         exp_lst = str(soup.findAll('header'))
@@ -99,15 +152,20 @@ geocode = "https://maps.googleapis.com/maps/api/staticmap?size=1000x1000&maptype
 file_obj = open("LinkedInUrls.txt",'r')
 urls = []
 for line in file_obj:
-    urls.append(line)
+    if(line != ""):
+        urls.append(line)
 #geocode += formatString(location)
 users = parseInfo(urls)
-printInfo(users)
-writeInfo(users)
-location = formatString(users)
-print(location)
-img = grabUrl(geocode + location)
-saveImage(img)
+#printInfo(users)
+#writeInfo(users)
+#writeCurrentLocation(users)
+writeCompany(users)
+#location = formatString(users)
+#img = grabUrl(geocode + location)
+#saveImage(img)
+
+app.run(debug=True)
+
 
 
 

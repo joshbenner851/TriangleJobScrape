@@ -1,109 +1,252 @@
 Name: William Dion
-Current Location: East Lansing, Michigan
-Company: Biomass Conversion Research Laboratory Location: East Lansing, Michigan
-Company: Results Tutoring Location: Biomass Conversion Research Laboratory
+Current Location: Food Safety, Quality, and Regulatory Chemist at Cargill
+Company: Cargill Location: East Lansing, Michigan
+
+Company: Biomass Conversion Research Laboratory Location: Eddyville, IA
 
 Name: Travis Packer
-Current Location: Greenville, South Carolina
+Current Location: Edison Engineering Development Program at GE Power & Water
 Company: GE Power & Water Location: Greenville, South Carolina
+
 Company: Michigan State University Location: Greenville, South Carolina
+
 Company: GE Power & Water Location: East Lansing, MI
+
 Company: Michigan State University Location: Greenville, South Carolina Area
+
 Company: GE Power & Water Location: CVRC
+
 Company: Michigan State University Location: Greenville, South Carolina Area
+
 Company: Caterpillar Inc. Location: East Lansing, Michigan
+
 Company: GE Appliances Location: Peoria, Illinois Area
+
 Company: Michigan State University, Department of Communicative Sciences Location: Louisville, Kentucky Area
+
 Company: MAHLE Behr USA Location: Lansing, Michigan Area
+
 Company: Tommy Hilfiger Location: Troy, Michigan
 
 Name: Nicholas Mirallegro
-Current Location: Novi, Michigan
+Current Location: Project Engineering Intern at Magna Closures & Magna Mirrors
 Company: Magna Closures & Magna Mirrors Location: Novi, Michigan
+
 Company: Michigan State University IT Department Location: Novi, MI
+
 Company: Magna Closures & Magna Mirrors Location: East Lansing, MI
+
 Company: Obadiah's Seafood Location: Novi
 
 Name: Josh Benner
-Current Location: Grand Rapids, Michigan
+Current Location: Software Engineer Intern at TechSmith Corporation
 Company: Michigan State University Location: Grand Rapids, Michigan
+
 Company: TechSmith Corporation Location: East Lansing, MI
+
 Company: Josh's Lawn Mowing Location: Okemos, MI
+
 Company: Panera Bread Location: Grand Rapids
+
 Company: Family Fare Location: Grand Rapids
 
 Name: Samuel-Hunter Berndt
-Current Location: Greater Grand Rapids, Michigan Area
+Current Location: Applied Technology Intern at Crowe Horwath LLP
 Company: Crowe Horwath LLP Location: Greater Grand Rapids, Michigan Area
+
 Company: Michigan State University Computer Center Location: Chicago, Illinois
+
 Company: Michigan State University College of Engineering Location: East Lansing, Michigan
+
 Company: MySpartanSublease Location: East Lansing, Michigan
+
 Company: Hipaway Location: East Lansing, Michigan
+
 Company: Michigan State University International Center Location: Berlin Area, Germany
+
 Company: Virus Free Location: International Center
+
 Company: Computer Science Location: Belding
 
 Name: Jovanni Ivanaj
-Current Location: Lake Orion, Michigan
+Current Location: Electrical Engineering Student (Senior)
 Company: Yazaki North America Location: Lake Orion, Michigan
+
 Company: Florida Power & Light Company (NextEra Energy) Location: Canton, MI
 
 Name: Dimitrius G. Innis
-Current Location: East Lansing, Michigan
+Current Location: Operations Management Trainee at Nestle USA
 Company: Nestle USA Location: East Lansing, Michigan
+
 Company: Anaerobic Digestion Research and Education Center Location: East Lansing
+
 Company: Unilever Location: Raeford, North Carolina
+
 Company: Klotz Auto Parts Location: Shelby, MI
+
 Company: Michigan State University Location: East Lansing
+
 Company: Plant, Soil, and Microbial Science Department at Michigan State University Location: East Lansing
+
 Company: Costa Rica Location: Shelby, MI
 
 Name: Grant Kunzi
-Current Location: Hudsonville, Michigan
+Current Location: Student at Associated Students of Michigan State University
 Company: Associated Students of Michigan State University Location: Hudsonville, Michigan
 
 Name: Daniel Lahnala
-Current Location: Saline, Michigan
+Current Location: Michigan State University Graduate
 Company: Halla Visteon Climate Control Location: Saline, Michigan
+
 Company: Michigan State University Location: East Lansing, MI
 
 Name: Jonathon Nichols
-Current Location: Lansing, Michigan
+Current Location: Transportation Intern at OHM Advisors
 Company: OHM Advisors Location: Lansing, Michigan
+
 Company: Marathon Petroleum Corporation Location: Livonia, MI
+
 Company: Mead & Hunt Location: Findlay, Ohio
+
 Company: Michigan State University Location: Lansing
+
 Company: Michigan Department of Transportation Location: East Lansing, MI
+
 Company: Michigan Department of Transportation Location: Grand Rapids, MI
 
 Name: Jalaj Prakash
-Current Location: East Lansing, Michigan
+Current Location: Student at MSU
 Company: Neumayer Tekfor Automotive Ltda Location: East Lansing, Michigan
+
 Company: MSU Engineering and Architectural Services Location: East Lansing, Michigan
 
 Name: Jake Patin
-Current Location: East Lansing, Michigan
+Current Location: Student Assistant at State of Michigan - Department of Environmental Quality
 Company: State of Michigan - Department of Environmental Quality Location: East Lansing, Michigan
+
 Company: Michigan State University Location: Lansing, Michigan Area
+
 Company: Michigan State University - Department of Community Sustainability Location: Lansing, Michigan Area
+
 Company: State of Michigan - Department of Environmental Quality Location: East Lansing
+
 Company: PM Environmental, Inc. Location: Lansing, Michigan Area
+
 Company: Lacks Enterprises Location: Lansing, Michigan Area
-Company: Grand Rapids Community College Location: Greater Grand Rapids, Michigan Area
 
 Name: Yamil Pietri
-Current Location: East Lansing, Michigan
+Current Location: Packaging Engineering Intern at UPS
 Company: UPS Location: East Lansing, Michigan
+
 Company: MSU Packaging Location: Addison, IL
 
-Name: Kyle Ratliff
-Current Location: East Lansing, Michigan
-Company: North Valley Internal Medicine Location: East Lansing, Michigan
-Company: Personal Health Care Location: 1501 North Milford Rd. Suite 200 Milford, MI 48381
-
 Name: Jack (John) Hiltz
-Current Location: Livonia, Michigan
+Current Location: Sales Associate at Gap Inc./ Banana Republic
 Company: Gap Inc./ Banana Republic Location: Livonia, Michigan
+
 Company: Michigan State University Residential Hospitality Services Location: East Lansing, MI
-Company: Nestlé Location: Solon, OH
+
+Company: Nestl Location: Solon, OH
+
+Name: Matthew Trathen
+Current Location: Resident Intern at St. John Catholic Student Center
+Company: St. John Catholic Student Center Location: Warren, Michigan
+
+Company: AAM Location: East Lansing, Michigan
+
+Name: Jonathan Chmura
+Current Location: Investigations Intern at Quicken Loans
+Company: Quicken Loans Location: Warren, Michigan
+
+Company: Michigan State University Location: Greater Detroit Area
+
+Company: Warren Community Center Location: Lansing, Michigan Area
+
+Company: Detroit Athletic Club Location: Greater Detroit Area
+
+Name: Anthony Russel
+Current Location: Associate Engineer at FAAC Incorporated
+Company: FAAC Incorporated Location: East Lansing, Michigan
+
+Company: Department of Forestry, Forest Measurements and Modeling Lab, Michigan State University Location: Ann Arbor, MI
+
+Company: Michigan Tech Research Institute Location: East Lansing, MI
+
+Company: Cengage Learning Location: Ann Arbor, MI
+
+Company: McDonald's Corporation Location: Wixom, MI
+
+Name: Marcus McDuffie
+Current Location: Senior Packaging Engineer at Henkel
+Company: Henkel Location: Phoenix, Arizona Area
+
+Company: Procter & Gamble Location: Scottsdale, AZ
+
+Company: Procter & Gamble Location: Cincinnati Area
+
+Company: The Center for College of Engineerinng Location: Cincinnati, OH
+
+Company: Procter & Gamble Location: East Lansing, MI
+
+Company: Toyota Location: Cincinnati Area
+
+Company: Michigan State University Location: Saline, MI
+
+Company: Toyota Location: East Lansing, MI
+
+Company: Michigan State University Computer Store Location: Saline, MI
+
+Company: Toyota Location: Saline, MI
+
+Name: Alec Wilhoite
+Current Location: ITLP (Information Technology Leadership Program) Intern at GE Aviation
+Company: GE Aviation Location: Fenton, Michigan
+
+Company: GE Aviation Location: Cincinnati, Ohio
+
+Name: Bijan Masrouri
+Current Location: Co Op at General Electric Aviation
+Company: General Electric Aviation Location: Milford, Michigan
+
+Company: Composite Vehicle Research Center Location: Evendale, Ohio
+
+Company: Rockwell Collins Location: Michigan State University, East Lansing, MI
+
+Company: Panther Global Technologies Location: Cedar Rapids, Iowa
+
+Company: Mechanical Engineering, minor in Material Science Location: Wixom, Michigan
+
+Name: Thomas Birkett
+Current Location: Engineer- Controls and Automation at Eli Lilly and Company
+Company: Eli Lilly and Company Location: Indianapolis, Indiana
+
+Company: Arnosti Biochemical and Molecular Biology Research Laboratory Location: Indianapolis, Indiana
+
+Company: Eli Lilly and Company Location: Indianapolis, IN
+
+Name: Charles Filipiak
+Current Location: Student at Michigan State University
+Name: John Groetsch
+Current Location: Process Engineering Intern at Oxy
+Company: Oxy Location: Lansing, Michigan Area
+
+Company: GE Appliances Location: Convent, Louisiana
+
+Company: Mid-Michigan Hockey Referee Association Location: Louisville, Kentucky Area
+
+Company: Michigan State Department of Chemical Engineering and Material Science Location: Lansing, Michigan Area
+
+Name: Conrad Bartke
+Current Location: Leadership & Technical Development Program - Supply Chain I at Caterpillar Inc.
+Company: Caterpillar Inc. Location: East Lansing, Michigan
+
+Company: Whirlpool Corporation Location: Peoria, Illinois Area
+
+Company: Toyota Motor Engineering & Manufacturing North America, Inc. (TEMA) Location: Benton Harbor, Michigan Area
+
+Company: Comau Location: Saline, MI.
+
+Company: Sylvan Lake Condominium Association / Avesta Management Location: Southfield, MI.
+
+Company: Michigan State University Location: Keego Harbor / Farmington Hills, MI
 

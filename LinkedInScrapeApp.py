@@ -104,41 +104,46 @@ def grabUrl(url):
 def parseInfo(urls):
     users = []
     for x in urls:
-        time.sleep(10) # delays for 5 seconds
+        time.sleep(5) # delays for 5 seconds
         user = []
         soup = BeautifulSoup(grabUrl(x),"html.parser")
         span = soup.findAll('span')
         if soup == "" or soup.findAll('span')  == []:
             continue
         #print(soup.findAll('span'))
-        user.append(soup.findAll('span',{"class":"full-name"})[0].text)
-        user.append(soup.findAll('p',{"class":"title"})[0].text)
-        user.append(soup.findAll('span',{"class":"locality"})[0].text)
-        places = soup.findAll("span",{"class":"locality"})
-        exp_lst = str(soup.findAll('header'))
-        #print(BeautifulSoup(exp_lst).h3)
-        company = BeautifulSoup(exp_lst)
-        section = company.findAll("h5")
-        jobNums = BeautifulSoup(str(exp_lst))
-        experience = []
-        i = 0
         try:
-            for item in section:
-                info = item.contents
-                if str(info[0])[13:19] == "degree":
-                    break
-                if info[0].text != "" :
-                    experience.append({str(info[0].text):places[i].text})
-                    i += 1
-        except :
-            print("skipping")
-        
-        user.append(experience)
-        users.append(user)
+            user.append(soup.findAll('span',{"class":"full-name"})[0].text)
+            user.append(soup.findAll('p',{"class":"title"})[0].text)
+            user.append(soup.findAll('span',{"class":"locality"})[0].text)
+            places = soup.findAll("span",{"class":"locality"})
+            exp_lst = str(soup.findAll('header'))
+            #print(BeautifulSoup(exp_lst).h3)
+            company = BeautifulSoup(exp_lst)
+            section = company.findAll("h5")
+            jobNums = BeautifulSoup(str(exp_lst))
+            experience = []
+            i = 0
+            try:
+                for item in section:
+                    info = item.contents
+                    if str(info[0])[13:19] == "degree":
+                        break
+                    if info[0].text != "" :
+                        experience.append({str(info[0].text):places[i].text})
+                        i += 1
+            except :
+                print("skipping")
+            
+            user.append(experience)
+            users.append(user)
+        except:
+            print("skipping user: " + x)
     return users
 
 def saveImage(img):
-    f=open("CurrentTrianglesLive"+".jpg","wb")
+    image_name = str(input("Enter the name of image you'd like to save"))
+    f=open(image_name+".jpg","wb")
+    print("Image has been saved")
     f.write(img.read())
     f.close()
 
@@ -159,12 +164,13 @@ users = parseInfo(urls)
 #printInfo(users)
 #writeInfo(users)
 #writeCurrentLocation(users)
-writeCompany(users)
-#location = formatString(users)
-#img = grabUrl(geocode + location)
-#saveImage(img)
+#writeCompany(users)
+location = formatString(users)
+img = grabUrl(geocode + location)
+saveImage(img)
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0',port=80,debug=True)
 
 
 

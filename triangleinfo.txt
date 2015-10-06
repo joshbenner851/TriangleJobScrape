@@ -39,8 +39,10 @@ Company: Magna Closures & Magna Mirrors Location: East Lansing, MI
 Company: Obadiah's Seafood Location: Novi
 
 Name: Josh Benner
-Current Location: Software Engineer Intern at TechSmith Corporation
+Current Location: Teaching Assistant at Michigan State University
 Company: Michigan State University Location: Grand Rapids, Michigan
+
+Company: Michigan State University Location: East Lansing
 
 Company: TechSmith Corporation Location: East Lansing, MI
 
@@ -118,7 +120,7 @@ Name: Jalaj Prakash
 Current Location: Student at MSU
 Company: Neumayer Tekfor Automotive Ltda Location: East Lansing, Michigan
 
-Company: MSU Engineering and Architectural Services Location: East Lansing, Michigan
+Company: MSU Engineering and Architectural Services Location: Wooster, Ohio
 
 Name: Jake Patin
 Current Location: Student Assistant at State of Michigan - Department of Environmental Quality
@@ -155,7 +157,7 @@ Company: St. John Catholic Student Center Location: Warren, Michigan
 Company: AAM Location: East Lansing, Michigan
 
 Name: Jonathan Chmura
-Current Location: Investigations Intern at Quicken Loans
+Current Location: Criminal Justice Student at Michigan State University
 Company: Quicken Loans Location: Warren, Michigan
 
 Company: Michigan State University Location: Greater Detroit Area
@@ -205,7 +207,7 @@ Company: GE Aviation Location: Fenton, Michigan
 Company: GE Aviation Location: Cincinnati, Ohio
 
 Name: Bijan Masrouri
-Current Location: Co Op at General Electric Aviation
+Current Location: Teaching Assistant at Michigan State University
 Company: General Electric Aviation Location: Milford, Michigan
 
 Company: Composite Vehicle Research Center Location: Evendale, Ohio
@@ -249,4 +251,12 @@ Company: Comau Location: Saline, MI.
 Company: Sylvan Lake Condominium Association / Avesta Management Location: Southfield, MI.
 
 Company: Michigan State University Location: Keego Harbor / Farmington Hills, MI
+
+Name: Bryce Ewing
+Current Location: Research and Development Assistant at MSU Composite Vehicle Research Center
+Company: MSU Composite Vehicle Research Center Location: Byron Center, Michigan
+
+Company: Michigan State University Location: East Lansing, MI
+
+Company: Orbital Sciences Corporation Location: International Institute of Technology, Chennai, India
 

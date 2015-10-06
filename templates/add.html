@@ -76,6 +76,7 @@ function initAutocomplete() {
     zoom: 13,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });
+  var geocoder = new google.maps.Geocoder();
 
   // Create the search box and link it to the UI element.
   var input = document.getElementById('pac-input');
@@ -87,13 +88,41 @@ function initAutocomplete() {
     searchBox.setBounds(map.getBounds());
   });
 
+
+
+function geocodeAddress(geocoder, resultsMap) {
+  var address = 'Grand Rapids';
+  geocoder.geocode({'address': address}, function(results, status) {
+    if (status === google.maps.GeocoderStatus.OK) {
+      resultsMap.setCenter(results[0].geometry.location);
+      
+      var contentString = '<h1>' + {{info|tojson|safe}} + '</h1>';
+
+      var infowindow = new google.maps.InfoWindow({
+      content: contentString
+      });
+
+      var marker = new google.maps.Marker({
+        map: resultsMap,
+        position: results[0].geometry.location
+      });
+      
+      marker.addListener('click', function() {
+      infowindow.open(map, marker);
+  });
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
+}
+
   var markers = [];
   // [START region_getplaces]
   // Listen for the event fired when the user selects a prediction and retrieve
   // more details for that place.
   searchBox.addListener('places_changed', function() {
     var places = searchBox.getPlaces();
-
+    geocodeAddress(geocoder, map);
     if (places.length == 0) {
       return;
     }
@@ -103,6 +132,9 @@ function initAutocomplete() {
       marker.setMap(null);
     });
     markers = [];
+    var dictjs = {{ dict|safe }}
+
+    
 
     // For each place, get the icon, name and location.
     var bounds = new google.maps.LatLngBounds();
@@ -114,10 +146,7 @@ function initAutocomplete() {
         anchor: new google.maps.Point(17, 34),
         scaledSize: new google.maps.Size(25, 25)
       };
-    
-    
-      var dictjs = {{ dict|safe }}
-      alert(dictjs[0]);
+      //alert(dictjs[0]);
 
     
       // Create a marker for each place.
@@ -125,7 +154,7 @@ function initAutocomplete() {
         map: map,
         icon: icon,
         title: place.name,
-        position: "Grand Rapids"
+        position: dictjs[0]
       }));
     
     var contentString = '<h1>' + {{info|tojson|safe}} + '</h1>';
@@ -149,9 +178,10 @@ function initAutocomplete() {
     });
     map.fitBounds(bounds);
   });
+}
 
   // [END region_getplaces]
-}
+
 
 
     </script>

@@ -6,8 +6,8 @@ import string
 from bs4 import BeautifulSoup, SoupStrainer
 import time
 
-username = "bennerster@gmail.com"
-password = "cak851e"
+username = ""
+password = ""
 
 cookie_filename = "parser.cookies.txt"
 
